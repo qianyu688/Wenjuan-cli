@@ -1,17 +1,17 @@
 import React, { FC } from 'react'
-import styles from '../QuestionComponents/QuestionInput.module.scss'
+import styles from '../QuestionComponents/QuestionRadio.module.scss'
 
 
 type PropsType = {
     fe_id:string,
     props: {
         title:string
+        isVertical: boolean
         options:Array<{
             value:string
             text:string
         }>
         value:string
-        isVertical:boolean
     }
 }
 
