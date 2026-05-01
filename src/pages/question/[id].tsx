@@ -10,7 +10,7 @@ type PropsType={
     // id:string
     errno:number,
     data?:{
-        id:string
+        _id:string
         title:string
         desc?:string
         js?:string
@@ -25,7 +25,7 @@ type PropsType={
 export default function Question(props:PropsType){
 
     const { errno, msg = '', data} = props
-    const { id, title = '', isDeleted, desc,isPublished ,componentList = []} = data || {}
+    const { _id:id, title = '', isDeleted, desc,isPublished ,componentList = []} = data || {}
 
     // 数据错误的情况
     if(errno!==0){
